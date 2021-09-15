@@ -144,12 +144,12 @@ body {
       float: left;
     }
     .header li a {
-      padding: 30px 30px 20px 10px;
+      padding: 30px 30px 20px 20px;
     }
     .header .menu {
       clear: none;
       float: right;
-      max-height: absolute;
+      max-height: none;
     }
     .header .menu-icon {
       display: none;
