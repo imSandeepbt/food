@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -52,6 +53,12 @@ body {
     color: #ffc527;
 
   }
+  .header li a .active {
+      background-color: #ffc527;
+  }
+  .header li a:hover:not(.active) {
+    color: #ffc527;
+  }
   
   .header .logo {
     display: block;
@@ -68,7 +75,7 @@ body {
   .header .menu {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    transition: 300px .2s ease-out;
     font-family: 'Space Mono', monospace;
   }
   
@@ -76,7 +83,7 @@ body {
   
   .header .menu-icon {
     cursor: pointer;
-    display: inline-block;
+    display: inline;
     float: right;
     padding: 28px 20px;
     position: relative;
@@ -149,10 +156,92 @@ body {
     .header .menu {
       clear: none;
       float: right;
-      max-height: none;
+      max-height: 100%;
     }
     .header .menu-icon {
       display: none;
     }
   }
-  
+/**********************Head******************************/
+.img{
+    background: url('images/main.jpg')no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-size: cover;
+    background-position: center;
+  }
+  .img::before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.473);
+  }
+  .center{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .center .title{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .center .sub_title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 200;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .center .btns button{
+    height: 55px;
+    width: 170px;
+   border-top-left-radius:20px;
+   border-bottom-right-radius: 20px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .center .btns button:first-child{
+    color: #fff;
+    background: none;
+  }
+  .center .btns button:last-child{
+      color: #fff;
+      background: none;
+    }
+  .btns button:first-child:hover{
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 0px ;
+    border-top-left-radius: 0px ;
+    background: linear-gradient( to bottom left ,rgb(54, 54, 255), violet, rgb(208, 255, 0));
+    color: black;
+  }
+  .center .btns button:last-child:hover{
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    background: linear-gradient(to bottom left ,rgb(34, 34, 255), violet, rgb(208, 255, 0));
+    color: black;
+  }
+  .center .btns a{
+      text-decoration: none;
+      color: black;
+  }
+  .center .btns a::after{
+      text-decoration: none;
+      color:coral;
+  }
