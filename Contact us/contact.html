@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact us</title>
+	<link rel="stylesheet" href="contact.css">
+	<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="footer" id="contact">
+        <div class="container">
+
+            <img src="images/shape.png" class="square" alt="" />
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Our team is happy to answer your questions.Fill out the form and we'll be in touch as soon as possible
+                    </p>
+                    <div class="info">
+                        <div class="information">
+                            <img src="/images/location.png" class="icon" alt="" />
+                            <p>#63,7th cross bankcolony BANGALORE 560070</p>
+                        </div>
+                        <div class="information">
+                            <img src="/images/email.png" class="icon" alt="" />
+                            <p>abc09@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="/images/phone.png" class="icon" alt="" />
+                            <p>123-456-789</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="thank/thank.html" autocomplete="off">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" required/>
+                            <label for="">Fullname</label>
+                            <span>Fullname</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" required/>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="number" name="phone" class="input" minlength="10" maxlength="10" required/>
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" required></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<script>
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+    let parent = this.parentNode;
+    parent.classList.add("focus");
+}
+
+function blurFunc() {
+    let parent = this.parentNode;
+    if (this.value == "") {
+        parent.classList.remove("focus");
+    }
+}
+
+inputs.forEach((input) => {
+    input.addEventListener("focus", focusFunc);
+    input.addEventListener("blur", blurFunc);
+});
+
+		</script>
+    </div>
+</body>
+</html>

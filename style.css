@@ -20,11 +20,11 @@ body {
   /* header */
   
   .header {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 3;;
   }
   .header .nav-img {
     display: block;
@@ -39,7 +39,7 @@ body {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: rgb(255, 255, 255);
+
   }
   
   .header li a {
@@ -170,7 +170,6 @@ body {
     display: block;
     background-size: cover;
     background-position: center;
-    position: relative;
   }
   .img::before{
     content: '';
@@ -236,4 +235,8 @@ body {
     .img{
       width: 100%;
     }
+  }
+  /**************About***************/
+  p{
+    transition: 3s;
   }
