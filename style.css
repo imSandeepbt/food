@@ -170,7 +170,6 @@ body {
     display: block;
     background-size: cover;
     background-position: center;
-
   }
   .img::before{
     content: '';
