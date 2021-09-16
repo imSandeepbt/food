@@ -234,6 +234,5 @@ body {
   @media (min-width: 80px) {
     .img{
       width: 100%;
-      height: 110vh;
     }
   }
